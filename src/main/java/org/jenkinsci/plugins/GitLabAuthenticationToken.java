@@ -268,7 +268,11 @@ public class GitLabAuthenticationToken extends AbstractAuthenticationToken {
 						// could be non-existant)
 						return Boolean.FALSE;
 					} else {
-						return Boolean.valueOf(repository.isPublic());
+					    if (repository.isPublic() != null) {
+					        return repository.isPublic();
+					    } else {
+					        return Boolean.FALSE;
+					    }
 					}
 				}
 			});
