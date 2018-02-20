@@ -13,7 +13,7 @@
     <properties>
         <jenkins.version>2.89.2</jenkins.version>
         <java.level>8</java.level>
-	<!--        
+	<!--
 	<jersey.version>2.26</jersey.version>
         <jackson.version>2.9.1</jackson.version>
         -->
@@ -72,7 +72,7 @@
         <dependency>
             <groupId>org.gitlab</groupId>
             <artifactId>java-gitlab-api</artifactId>
-            <version>1.2.6</version>
+            <version>4.0.0</version>
         </dependency>
 	<dependency>
             <groupId>org.jenkins-ci</groupId>
